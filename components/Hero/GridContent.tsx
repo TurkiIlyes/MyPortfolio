@@ -1,6 +1,7 @@
 import React from "react";
 import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 import CustomButton from "../ui/CustomButton";
+import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 
 const GridContent = () => {
   return (
@@ -15,7 +16,7 @@ const GridContent = () => {
       <p className=" mb-4 text-center text-xs sm:text-base md:text-lg font-normal tracking-widest text-blue-100 ">
         Hi! I&apos;m Ilyess, a Full stack Developer based in Tunisia.
       </p>
-      <CustomButton title="See My Work" />
+      <CustomButton title="See My Work" icon={faLocationArrow} />
     </div>
   );
 };
