@@ -1,3 +1,5 @@
+import { AppleCardsCarouselDemo } from "@/components/Experience/Experience";
+import Footer from "@/components/Footer/Footer";
 import Grid from "@/components/Grid/Grid";
 import Hero from "@/components/Hero/Hero";
 import RecentProjects from "@/components/RecentProjects/RecentProjects ";
@@ -12,6 +14,8 @@ export default function Home() {
         <Hero />
         <Grid />
         <RecentProjects />
+        <AppleCardsCarouselDemo />
+        <Footer />
       </div>
     </main>
   );

@@ -157,8 +157,14 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        fadeSlide: {
+          "0%": { opacity: "0", transform: "translateY(-20px)" },
+          "50%": { opacity: "0.5", transform: "translateY(0)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
+        "fade-slide": "fadeSlide 0.5s ease-in-out forwards",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",

@@ -5,7 +5,7 @@ import GridContent from "./GridContent";
 
 const Hero = () => {
   return (
-    <div className="  pt-36 pb-20 ">
+    <div className="  pt-36 pb-8 ">
       <CustomSpotLights />
       <GridBackground />
       <GridContent />
