@@ -1,20 +1,20 @@
-import { AppleCardsCarouselDemo } from "@/components/Experience/Experience";
+import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer/Footer";
-import Grid from "@/components/Grid/Grid";
+import About from "@/components/About/About";
 import Hero from "@/components/Hero/Hero";
-import RecentProjects from "@/components/RecentProjects/RecentProjects ";
+import Projects from "@/components/Projects/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNavBar";
 import { navItems } from "@/data";
 
 export default function Home() {
   return (
-    <main className=" relative bg-black-100 overflow-hidden ">
+    <main id="main" className=" relative bg-black-100 overflow-hidden ">
       <div className=" container">
         <FloatingNav navItems={navItems} />
         <Hero />
-        <Grid />
-        <RecentProjects />
-        <AppleCardsCarouselDemo />
+        <About />
+        <Projects />
+        <Experience />
         <Footer />
       </div>
     </main>

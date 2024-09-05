@@ -125,8 +125,9 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="last:pr-[5%] md:last:pr-[33%]  rounded-3xl"
+                className="  rounded-3xl  border border-black-300  "
               >
+                {/* last:pr-[5%] md:last:pr-[33%] */}
                 {item}
               </motion.div>
             ))}

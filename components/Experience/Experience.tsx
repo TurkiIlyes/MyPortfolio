@@ -4,13 +4,13 @@ import React from "react";
 import { Carousel, Card } from "@/components/ui/AppleCardsCarousel";
 import SectionHeader from "../SectionHeader/SectionHeader";
 
-export function AppleCardsCarouselDemo() {
+const Experience = () => {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
-    <div className="w-full h-full py-20">
+    <div id="experience" className="w-full h-full py-20">
       <SectionHeader
         title=" A small selection of"
         customTitle="recent projects"
@@ -18,7 +18,7 @@ export function AppleCardsCarouselDemo() {
       <Carousel items={cards} />
     </div>
   );
-}
+};
 
 const DummyContent = () => {
   return (
@@ -66,3 +66,5 @@ const data = [
     content: <DummyContent />,
   },
 ];
+
+export default Experience;

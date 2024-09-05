@@ -6,13 +6,13 @@ import { PinContainer } from "../ui/PinContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SectionHeader from "../SectionHeader/SectionHeader";
 
-const RecentProjects = () => {
+const Projects = () => {
   return (
-    <div className="py-20">
-      <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
-      </h1>
+    <div id="projects" className="py-20">
+      <SectionHeader
+        title="A small selection of"
+        customTitle="recent projects"
+      />
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <div
@@ -84,4 +84,4 @@ const RecentProjects = () => {
   );
 };
 
-export default RecentProjects;
+export default Projects;
