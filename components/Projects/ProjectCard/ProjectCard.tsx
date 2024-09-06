@@ -2,7 +2,7 @@ import { PinContainer } from "@/components/ui/PinContainer";
 import ProjectContent from "./ProjectContent";
 import ProjectImage from "./ProjectImage";
 import ProjectIcons from "./ProjectIcons";
-import ProjectLiveLink from "./ProjectLiveLink";
+import ProjectLinks from "./ProjectLinks";
 
 export interface ProjectType {
   id: number;
@@ -25,7 +25,7 @@ const ProjectCard = ({ item }: { item: ProjectType }) => (
       <ProjectContent item={item} />
       <div className="flex items-center justify-between mt-7 mb-3">
         <ProjectIcons item={item} />
-        <ProjectLiveLink />
+        <ProjectLinks />
       </div>
     </PinContainer>
   </div>
