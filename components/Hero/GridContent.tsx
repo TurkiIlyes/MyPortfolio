@@ -2,7 +2,7 @@ import React from "react";
 import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 import CustomButton from "../ui/CustomButton";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
-import AnimatedName from "../Footer/AnimatedName";
+import AnimatedName from "../Common/AnimatedName/AnimatedName";
 
 const GridContent = () => {
   return (
@@ -14,14 +14,19 @@ const GridContent = () => {
         className=" text-center text-[40px] md:text-5xl lg:text-6xl "
         words="Transforming Concepts into Seamless User Experiences"
       />
-      {/* <AnimatedName /> */}
       <div className=" mb-4 text-center text-xs sm:text-base md:text-lg font-normal tracking-widest text-blue-100 ">
-        <span className="">Hi! I&apos;m</span>{" "}
-        <AnimatedName className=" text-purple font-black " />
-        <span className="">,</span>
-        <div className="">a Full stack Developer based in Tunisia.</div>
+        <span>Hi! I&apos;m</span>{" "}
+        <AnimatedName className=" text-sm sm:text-md md:text-xl text-purple font-black tracking-[2px] " />
+        <span>,</span>
+        <p className="  leading-loose ">
+          a Full stack Developer based in Tunisia.
+        </p>
       </div>
-      <CustomButton title="See My Work" icon={faLocationArrow} />
+      <CustomButton
+        title="See My Work"
+        icon={faLocationArrow}
+        link="#projects"
+      />
     </div>
   );
 };

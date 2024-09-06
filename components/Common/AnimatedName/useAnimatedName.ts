@@ -1,7 +1,6 @@
-"use client";
 import { useEffect, useState } from "react";
 
-const AnimatedName = ({ className }: { className?: string }) => {
+const useAnimatedName = () => {
   const firstName = "Ilyes";
   const lastName = "Turki";
   const [index, setIndex] = useState(1);
@@ -36,28 +35,11 @@ const AnimatedName = ({ className }: { className?: string }) => {
 
     return () => clearInterval(interval);
   }, [isReversing, firstName.length, lastName.length]);
-
-  return (
-    <span className={className}>
-      {firstName
-        .slice(0, index)
-        .split("")
-        .map((char, i) => (
-          <span key={i} className=" inline-block animate-fade-slide">
-            {char}
-          </span>
-        ))}
-      {index > 1 ? " " : ""}
-      {lastName
-        .slice(0, index)
-        .split("")
-        .map((char, i) => (
-          <span key={i} className=" inline-block animate-fade-slide">
-            {char}
-          </span>
-        ))}
-    </span>
-  );
+  return {
+    firstName,
+    lastName,
+    index,
+  };
 };
 
-export default AnimatedName;
+export default useAnimatedName;

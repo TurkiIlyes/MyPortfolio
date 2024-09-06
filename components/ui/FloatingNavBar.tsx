@@ -102,16 +102,12 @@ export const FloatingNav = ({
           <Link
             key={`link-${idx}`}
             href={navItem.link}
-            legacyBehavior // Enable legacy behavior to allow using <a> inside <Link>
+            className={cn(
+              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+            )}
           >
-            <a
-              className={cn(
-                "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-              )}
-            >
-              <span className="block sm:hidden">{navItem.icon}</span>
-              <span className="text-sm !cursor-pointer">{navItem.name}</span>
-            </a>
+            <span className="block sm:hidden">{navItem.icon}</span>
+            <span className="text-sm !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>
