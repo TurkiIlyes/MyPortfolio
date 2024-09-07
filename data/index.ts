@@ -25,6 +25,7 @@ export interface Project {
 
 export interface Experience {
   category: string;
+  duration: string;
   title: string;
   src: string;
   content?: JSX.Element;
@@ -45,7 +46,8 @@ export const navItems: NavItem[] = [
 export const AboutItems: AboutItem[] = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title:
+      "As a computer engineering student specializing in embedded systems and IoT, I blend technical expertise with creative problem-solving in full stack development.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -86,7 +88,8 @@ export const AboutItems: AboutItem[] = [
 
   {
     id: 5,
-    title: "Currently building a Full Stack Ecommerce Website",
+    title:
+      "Currently, I'm building a Full Stack Ecommerce Website, integrating complex functionalities.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -109,47 +112,46 @@ export const AboutItems: AboutItem[] = [
 export const projects: Project[] = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "iShop: Your Complete E - commerce Solution",
+    des: "iShop is a full-stack MERN e-commerce site with user login, admin dashboard, and everything needed to manage your store.",
+    img: "/Project/i-shop6.png",
+    iconLists: [
+      "/Icon/mongo-db.svg",
+      "/Icon/express.png",
+      "/Icon/react.svg",
+      "/Icon/next.svg",
+      "/Icon/node.svg",
+      "/Icon/ts.svg",
+      "/Icon/tail.svg",
+    ],
+    link: "https://i-shop-next-js-z326.vercel.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
-  },
-  {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "MyToDo: Your Ultimate To-Do List Manager",
+    des: "Manage tasks and habits with MyToDo. Set email reminders, control your account, add images, and use easy login and sign-up features.",
+    img: "/Project/my-to-do.png",
+    iconLists: [
+      "/Icon/mongo-db.svg",
+      "/Icon/express.png",
+      "/Icon/react.svg",
+      "/Icon/node.svg",
+    ],
+    link: "https://mytodofrontend.onrender.com/",
   },
 ];
 
 export const experiences: Experience[] = [
   {
-    category: "valentery",
-    title: "Trainer on wecode",
+    category: "Voluntary",
+    duration: "2022 - Present",
+    title: "Instructor at Wecode",
     src: "/Experience/wecode.png",
   },
   {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
+    category: "Internship",
+    duration: "02/08/2024 - 27/08/2024",
+    title: "Intern - Developed Official Website for ARA",
     src: "/Experience/exp-ara.png",
   },
 ];

@@ -10,6 +10,7 @@ export interface ProjectType {
   des: string;
   img: string;
   iconLists: string[];
+  link: string;
 }
 
 const ProjectCard = ({ item }: { item: ProjectType }) => (
@@ -17,15 +18,12 @@ const ProjectCard = ({ item }: { item: ProjectType }) => (
     className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
     key={item.id}
   >
-    <PinContainer
-      title="/ui.aceternity.com"
-      href="https://twitter.com/mannupaaji"
-    >
+    <PinContainer title={item.link} href={item.link}>
       <ProjectImage item={item} />
       <ProjectContent item={item} />
       <div className="flex items-center justify-between mt-7 mb-3">
         <ProjectIcons item={item} />
-        <ProjectLinks />
+        <ProjectLinks link={item.link} gitHubLink={item.link} />
       </div>
     </PinContainer>
   </div>
