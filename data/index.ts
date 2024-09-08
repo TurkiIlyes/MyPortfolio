@@ -114,7 +114,7 @@ export const projects: Project[] = [
     id: 1,
     title: "iShop: Your Complete E - commerce Solution",
     des: "iShop is a full-stack MERN e-commerce site with user login, admin dashboard, and everything needed to manage your store.",
-    img: "/Project/i-shop6.png",
+    img: "/Project/i-shop.png",
     iconLists: [
       "/Icon/mongo-db.svg",
       "/Icon/express.png",
@@ -152,7 +152,7 @@ export const experiences: Experience[] = [
     category: "Internship",
     duration: "02/08/2024 - 27/08/2024",
     title: "Intern - Developed Official Website for ARA",
-    src: "/Experience/exp-ara.png",
+    src: "/Experience/ara.png",
   },
 ];
 
