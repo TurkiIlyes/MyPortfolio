@@ -10,6 +10,7 @@ export interface ProjectType {
   des: string;
   img: string;
   iconLists: string[];
+  gitHubLink: string;
   link: string;
 }
 
@@ -23,7 +24,7 @@ const ProjectCard = ({ item }: { item: ProjectType }) => (
       <ProjectContent item={item} />
       <div className="flex items-center justify-between mt-7 mb-3">
         <ProjectIcons item={item} />
-        <ProjectLinks link={item.link} gitHubLink={item.link} />
+        <ProjectLinks gitHubLink={item.gitHubLink} link={item.link} />
       </div>
     </PinContainer>
   </div>

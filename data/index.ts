@@ -20,6 +20,7 @@ export interface Project {
   des: string;
   img: string;
   iconLists: string[];
+  gitHubLink: string;
   link: string;
 }
 
@@ -35,6 +36,7 @@ export interface Experience {
 export interface SocialMediaItem {
   id: number;
   img: string;
+  link: string;
 }
 
 export const navItems: NavItem[] = [
@@ -125,7 +127,8 @@ export const projects: Project[] = [
       "/Icon/ts.svg",
       "/Icon/tail.svg",
     ],
-    link: "https://i-shop-next-js-z326.vercel.app/",
+    gitHubLink: "https://github.com/TurkiIlyes/iShop-NextJs",
+    link: "https://ishopapp.vercel.app/",
   },
   {
     id: 2,
@@ -138,6 +141,7 @@ export const projects: Project[] = [
       "/Icon/react.svg",
       "/Icon/node.svg",
     ],
+    gitHubLink: "https://github.com/TurkiIlyes/MyToDoFrontEnd",
     link: "https://mytodofrontend.onrender.com/",
   },
 ];
@@ -165,9 +169,11 @@ export const socialMedia: SocialMediaItem[] = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/TurkiIlyes",
   },
   {
     id: 2,
     img: "/link.svg",
+    link: "https://github.com/TurkiIlyes",
   },
 ];
