@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="w-full pt-20 pb-10" id="contact">
       <FooterBackground />
       <ContactSection />
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row max-md:gap-4 flex-col-reverse justify-between items-center">
         <Copyright />
         <SocialMediaLinks />
       </div>

@@ -12,7 +12,7 @@ const ContactSection = () => (
       your goals. Whether you&apos;re looking to start a new project or need a
       reliable developer to join your team, I&apos;m here to help.
     </p>
-    <a href="mailto:contact@jsmastery.pro">
+    <a href="mailto:turki.ilyes.dev@gmail.com">
       <CustomButton title="Let's get in touch" icon={faLocationArrow} />
     </a>
   </div>

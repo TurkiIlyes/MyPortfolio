@@ -11,7 +11,7 @@ const Projects = () => {
         title="A small selection of"
         customTitle="recent projects"
       />
-      <div className="flex flex-wrap items-center justify-center px-4 gap-x-20 mt-10">
+      <div className="flex flex-wrap items-center justify-center px-4 gap-x-20 gap-y-8 mt-10">
         {projects.map((item) => (
           <ProjectCard item={item} key={item.id} />
         ))}
