@@ -27,6 +27,7 @@ export interface Experience {
   category: string;
   duration: string;
   title: string;
+  description: string;
   src: string;
   content?: JSX.Element;
 }
@@ -146,12 +147,16 @@ export const experiences: Experience[] = [
     category: "Voluntary",
     duration: "2022 - Present",
     title: "Instructor at Wecode",
+    description:
+      "Led mentoring sessions to teach students web development fundamentals, including HTML, CSS, JavaScript, and frameworks. Focused on hands-on projects to enhance learning and applied problem-solving skills in a collaborative environment.",
     src: "/Experience/wecode.png",
   },
   {
     category: "Internship",
-    duration: "02/08/2024 - 27/08/2024",
+    duration: "August 2024",
     title: "Intern - Developed Official Website for ARA",
+    description:
+      "Completed a full stack development internship at ARA, where I independently designed and built their official website. The project involved using Next.js, Express, and MongoDB to create a responsive, user-friendly platform that streamlined their digital presence and improved client engagement.",
     src: "/Experience/ara.png",
   },
 ];

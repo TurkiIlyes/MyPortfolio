@@ -11,7 +11,12 @@ const Experience = () => {
     return (
       <Card
         key={card.src}
-        card={{ ...card, content: card.content || <DummyContent /> }}
+        card={{
+          ...card,
+          content: card.content || (
+            <DummyContent img={card.src} des={card.description} />
+          ),
+        }}
         index={index}
       />
     );

@@ -205,7 +205,7 @@ export const Card = ({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
+              className="bg-black/40 backdrop-blur-lg h-full w-full fixed inset-0"
             />
             <motion.div
               initial={{ opacity: 0 }}
@@ -213,7 +213,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl mx-auto bg-white dark:bg-neutral-900 h-fit  z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
+              className="max-w-5xl mx-auto bg-white dark:bg-sky-500/[0.08] h-fit  z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
             >
               <button
                 className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
@@ -223,13 +223,13 @@ export const Card = ({
               </button>
               <motion.p
                 layoutId={layout ? `category-${card.title}` : undefined}
-                className="text-base font-medium text-black dark:text-white"
+                className="text-base font-medium text-black dark:text-purple"
               >
                 {card.category}
               </motion.p>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white"
+                className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-blue-100"
               >
                 {card.title}
               </motion.p>
@@ -244,17 +244,17 @@ export const Card = ({
         className=" rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
-        <div className="relative w-full z-40 p-8">
+        <div className="relative w-full z-40 px-4 py-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className=" w-full flex justify-between text-white text-xs md:text-sm font-bold font-sans"
+            className=" w-full flex justify-between text-blue-100 text-xs md:text-sm font-medium font-sans"
           >
             <span className="text-purple">{card.category}</span>
-            <span className="text-[#ff35b5d6]">{card.duration}</span>
+            <span className="">{card.duration}</span>
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-xl md:text-3xl font-semibold max-w-xs leading-[48px] text-left [text-wrap:balance] font-sans mt-4"
+            className="text-xl md:text-3xl md:leading-[44px] text-blue-100 font-semibold text-left [text-wrap:balance] mt-6"
           >
             {card.title}
           </motion.p>
