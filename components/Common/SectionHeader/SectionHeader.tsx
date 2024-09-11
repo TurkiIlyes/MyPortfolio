@@ -8,7 +8,7 @@ const SectionHeader = ({
   customTitle?: string;
 }) => {
   return (
-    <h2 className="heading">
+    <h2 className="heading max-sm:max-w-[96%] mx-auto">
       {title} <span className="text-purple">{customTitle}</span>
     </h2>
   );

@@ -9,9 +9,9 @@ const DummyContent = ({ img, des }: { img: string; des: string }) => {
       <Image
         src={img}
         alt={img}
-        height="500"
-        width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto my-6 object-contain rounded-sm"
+        height="1400"
+        width="1400"
+        className="w-full mx-auto my-6 object-contain rounded-sm"
       />
     </div>
   );

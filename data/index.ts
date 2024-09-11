@@ -30,6 +30,7 @@ export interface Experience {
   title: string;
   description: string;
   src: string;
+  coverImg: string;
   content?: JSX.Element;
 }
 
@@ -50,11 +51,11 @@ export const AboutItems: AboutItem[] = [
   {
     id: 1,
     title:
-      "As a computer engineering student specializing in embedded systems and IoT, I blend technical expertise with creative problem-solving in full stack development.",
-    description: "",
+      "I'm a computer engineering student specializing in embedded systems, IoT, and full-stack development. I bridge hardware and software to create integrated solutions.",
+    description: "About Me",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
+    titleClassName: "justify-end ",
     img: "/b1.svg",
     spareImg: "",
   },
@@ -92,7 +93,7 @@ export const AboutItems: AboutItem[] = [
   {
     id: 5,
     title:
-      "Currently, I'm building a Full Stack Ecommerce Website, integrating complex functionalities.",
+      "Current Project: Developing a Full-Stack E-commerce Website with advanced features.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -106,7 +107,7 @@ export const AboutItems: AboutItem[] = [
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    titleClassName: "justify-center md:max-w-full max-w-80 text-center",
     img: "",
     spareImg: "",
   },
@@ -154,6 +155,7 @@ export const experiences: Experience[] = [
     description:
       "Led mentoring sessions to teach students web development fundamentals, including HTML, CSS, JavaScript, and frameworks. Focused on hands-on projects to enhance learning and applied problem-solving skills in a collaborative environment.",
     src: "/Experience/wecode.png",
+    coverImg: "/Experience/wecode.png",
   },
   {
     category: "Internship",
@@ -161,7 +163,8 @@ export const experiences: Experience[] = [
     title: "Intern - Developed Official Website for ARA",
     description:
       "Completed a full stack development internship at ARA, where I independently designed and built their official website. The project involved using Next.js, Express, and MongoDB to create a responsive, user-friendly platform that streamlined their digital presence and improved client engagement.",
-    src: "/Experience/ara.png",
+    src: "/Experience/ara-company.png",
+    coverImg: "/Experience/ara-company-cover.png",
   },
 ];
 
@@ -174,6 +177,6 @@ export const socialMedia: SocialMediaItem[] = [
   {
     id: 2,
     img: "/link.svg",
-    link: "https://github.com/TurkiIlyes",
+    link: "https://linkedin.com/in/ilyesturki",
   },
 ];

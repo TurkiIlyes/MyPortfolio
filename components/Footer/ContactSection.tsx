@@ -8,12 +8,12 @@ const ContactSection = () => (
       to the next level?
     </h1>
     <p className="text-white-200 md:mt-10 my-5 text-center lg:max-w-[45vw] ">
-      Reach out to me today, and let&apos;s discuss how I can help you achieve
-      your goals. Whether you&apos;re looking to start a new project or need a
-      reliable developer to join your team, I&apos;m here to help.
+      Reach out to discuss how we can turn your vision into reality. Whether
+      you’re looking to develop a new project or need a reliable developer to
+      join your team, I’m here to help you succeed.
     </p>
     <a href="mailto:turki.ilyes.dev@gmail.com">
-      <CustomButton title="Let's get in touch" icon={faLocationArrow} />
+      <CustomButton title="Let’s Get in Touch" icon={faLocationArrow} />
     </a>
   </div>
 );

@@ -18,8 +18,9 @@ const GridContent = () => {
         <span>Hi! I&apos;m</span>{" "}
         <AnimatedName className=" text-sm sm:text-md md:text-xl text-purple font-black tracking-[2px] " />
         <span>,</span>
-        <p className="  leading-loose ">
-          a Full stack Developer based in Tunisia.
+        <p className="  leading-loose max-w-2xl text-center ">
+          a Full-Stack Developer specializing in scalable web applications and
+          embedded systems, based in Tunisia.
         </p>
       </div>
       <CustomButton

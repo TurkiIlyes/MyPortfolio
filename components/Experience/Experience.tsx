@@ -14,7 +14,7 @@ const Experience = () => {
         card={{
           ...card,
           content: card.content || (
-            <DummyContent img={card.src} des={card.description} />
+            <DummyContent img={card.coverImg} des={card.description} />
           ),
         }}
         index={index}
@@ -25,8 +25,8 @@ const Experience = () => {
   return (
     <div id="experience" className="w-full h-full py-20">
       <SectionHeader
-        title=" A small selection of"
-        customTitle="recent projects"
+        title=" A Showcase of My"
+        customTitle="Professional Experiences"
       />
       <Carousel items={cards} />
     </div>

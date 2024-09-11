@@ -247,14 +247,14 @@ export const Card = ({
         <div className="relative w-full z-40 px-4 py-6">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className=" w-full flex justify-between text-blue-100 text-xs md:text-sm font-medium font-sans"
+            className=" w-full flex justify-between text-blue-100 text-sm md:text-base font-medium font-sans"
           >
-            <span className="text-purple">{card.category}</span>
+            <span className="text-purple font-bold">{card.category}</span>
             <span className="">{card.duration}</span>
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-xl md:text-3xl md:leading-[44px] text-blue-100 font-semibold text-left [text-wrap:balance] mt-6"
+            className="text-xl md:text-3xl md:leading-[46px] text-blue-100 font-semibold text-left [text-wrap:balance] mt-5"
           >
             {card.title}
           </motion.p>
@@ -264,6 +264,9 @@ export const Card = ({
           alt={card.title}
           fill
           className="object-cover absolute z-10 inset-0"
+          style={{
+            objectPosition: "top",
+          }}
         />
       </motion.button>
     </>
