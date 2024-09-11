@@ -172,7 +172,7 @@ export const socialMedia: SocialMediaItem[] = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/TurkiIlyes",
+    link: "https://github.com/ilyesturki",
   },
   {
     id: 2,
