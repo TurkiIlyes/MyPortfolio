@@ -20,7 +20,7 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "1.5rem",
+      padding: "1rem",
       screens: {
         sm: "576px", // Bootstrap's small breakpoint
         md: "768px", // Bootstrap's medium breakpoint

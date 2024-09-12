@@ -8,7 +8,7 @@ import { navItems } from "@/data";
 
 export default function Home() {
   return (
-    <main id="main" className=" relative bg-black-100 overflow-hidden ">
+    <main id="main" className=" relative bg-black-100 overflow-clip ">
       <div className=" container">
         <FloatingNav navItems={navItems} />
         <Hero />

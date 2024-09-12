@@ -120,7 +120,7 @@ export const BentoGridItem = ({
             {description}
           </div>
           <div
-            className={`font-sans tracking-wide  ${
+            className={`font-sans tracking-wider  ${
               id === 1
                 ? "text-[12px] "
                 : id === 5
@@ -128,7 +128,7 @@ export const BentoGridItem = ({
                 : "text-[20px]"
             }  ${
               id === 1 ? "" : " max-w-96"
-            } lg:text-[24px] font-bold lg:leading-[40px] z-20 opacity-90 `}
+            } lg:text-[24px] font-semibold lg:leading-[40px] z-20 opacity-90 `}
           >
             {title}
           </div>
