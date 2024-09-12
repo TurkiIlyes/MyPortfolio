@@ -1,0 +1,20 @@
+[33m6985f94[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD^
+[33m1e9c57d[m HEAD@{1}: reset: moving to HEAD^
+[33m93201c9[m HEAD@{2}: reset: moving to HEAD^
+[33m760b4e3[m HEAD@{3}: reset: moving to HEAD^
+[33m4ea9af6[m HEAD@{4}: reset: moving to HEAD^
+[33m4fcd826[m HEAD@{5}: reset: moving to HEAD^
+[33m69a4c66[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{6}: pull --tags origin main: Fast-forward
+[33m4fcd826[m HEAD@{7}: reset: moving to HEAD^
+[33m69a4c66[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{8}: commit: Update the project
+[33m4fcd826[m HEAD@{9}: commit: Update the project
+[33m4ea9af6[m HEAD@{10}: commit: Update the project
+[33m760b4e3[m HEAD@{11}: commit: Update the project
+[33m93201c9[m HEAD@{12}: commit: Update the project
+[33m1e9c57d[m HEAD@{13}: commit: Update the project
+[33m6985f94[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{14}: commit: update the project
+[33md6e8b73[m HEAD@{15}: commit: update the project
+[33mfb39bdb[m HEAD@{16}: commit: update the project
+[33mbaeb67e[m HEAD@{17}: commit: update the project
+[33m7f03832[m HEAD@{18}: commit: update the project
+[33m7d932b2[m HEAD@{19}: commit: update the project
