@@ -1,13 +1,13 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
 
 import animationData from "@/data/confetti.json";
 import CustomButton from "./CustomButton";
-import Lottie from "react-lottie";
+import lottie from "lottie-web";
 
 import GridGlobe from "./GridGlobe";
 
@@ -53,15 +53,21 @@ export const BentoGridItem = ({
   const rightLists = ["Express", "MongoDB", "Typescript"];
 
   const [copied, setCopied] = useState(false);
+  const animationContainer = useRef<HTMLDivElement | null>(null);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  useEffect(() => {
+    if (animationContainer.current) {
+      const animation = lottie.loadAnimation({
+        container: animationContainer.current,
+        animationData,
+        loop: copied,
+        autoplay: copied,
+        renderer: "svg",
+      });
+
+      return () => animation.destroy(); // Cleanup on component unmount
+    }
+  }, [copied]);
 
   const handleCopy = () => {
     const text = "turki.ilyes.dev@gmail.com";
@@ -170,9 +176,9 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
                 }`}
-              >
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
+                ref={animationContainer}
+                style={{ height: 200, width: 400 }}
+              />
 
               <CustomButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}

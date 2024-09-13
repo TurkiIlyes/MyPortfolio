@@ -297,6 +297,7 @@ export const BlurImage = ({
       decoding="async"
       blurDataURL={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
+      sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
       {...rest}
     />
   );
