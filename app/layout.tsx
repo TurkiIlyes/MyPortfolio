@@ -1,5 +1,5 @@
 import { HighlightInit } from "@highlight-run/next/client";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -40,6 +40,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </body>
+        <GoogleAnalytics gaId="G-CLXSBYW1RM" />
       </html>
     </>
   );
