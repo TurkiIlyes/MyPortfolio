@@ -116,7 +116,6 @@ export function Globe({ globeConfig, data }: WorldProps) {
   const _buildData = () => {
     const arcs = data;
     let points = [];
-    console.log(arcs.length);
     for (let i = 0; i < arcs.length; i++) {
       const arc = arcs[i];
       const rgb = hexToRgb(arc.color) as { r: number; g: number; b: number };

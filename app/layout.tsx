@@ -1,3 +1,5 @@
+import { HighlightInit } from "@highlight-run/next/client";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,17 +18,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
-      <body className={inter.className} suppressHydrationWarning={true}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
+    <>
+      <HighlightInit
+        projectId={"kevnn4yg"}
+        serviceName="my-nextjs-frontend"
+        tracingOrigins
+        networkRecording={{
+          enabled: true,
+          recordHeadersAndBody: true,
+          urlBlocklist: [],
+        }}
+      />
+      <html lang="en" suppressHydrationWarning={true}>
+        <body className={inter.className} suppressHydrationWarning={true}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
   );
 }
